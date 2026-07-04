@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Piyush Chaudhary — UI/UX Designer</title>
+<meta name="description" content="Piyush Chaudhary — UI/UX Designer, Product Designer and Figma specialist crafting intuitive digital experiences." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     ICON SPRITE — reusable, swap freely. Generic abstract glyphs
+     (not brand logos) so they stay license-safe.
+============================================================ -->
+<svg class="sr-only" aria-hidden="true">
+<defs>
+  <symbol id="i-cursor" viewBox="0 0 24 24"><path d="M5 3l15 7-6.5 2.2L11 19 5 3z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5L21 21"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M2 13l10 5 10-5"/><path d="M2 16.5l10 5 10-5"/></symbol>
+  <symbol id="i-window" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M2.5 9h19"/><circle cx="5.5" cy="6.7" r=".6" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.4"/><path d="M10 18.6h4"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.4"/><rect x="14" y="3" width="7" height="7" rx="1.4"/><rect x="3" y="14" width="7" height="7" rx="1.4"/><rect x="14" y="14" width="7" height="7" rx="1.4"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.3"/><path d="M10 8.3v7.4l6-3.7z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-frame" viewBox="0 0 24 24"><path d="M3 7V3.5h3.5"/><path d="M21 7V3.5h-3.5"/><path d="M3 17v3.5h3.5"/><path d="M21 17v3.5h-3.5"/><rect x="6.5" y="6.5" width="11" height="11" rx="1.4" opacity=".5"/></symbol>
+  <symbol id="i-atom" viewBox="0 0 24 24"><circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/><ellipse cx="12" cy="12" rx="9" ry="3.6"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.6" transform="rotate(120 12 12)"/></symbol>
+  <symbol id="i-devices" viewBox="0 0 24 24"><rect x="2.5" y="4" width="14" height="10.5" rx="1.4"/><path d="M6 18h7"/><rect x="17.2" y="9" width="5" height="9" rx="1.2"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path d="M9 6 3.5 12 9 18"/><path d="M15 6l5.5 6-5.5 6"/></symbol>
+  <symbol id="i-shapes" viewBox="0 0 24 24"><circle cx="8" cy="8" r="4.2"/><rect x="13" y="4" width="7.5" height="7.5" rx="1.4"/><path d="M9 21l4-7.5L17 21z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2.4"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></symbol>
+  <symbol id="i-phone-call" viewBox="0 0 24 24"><path d="M5.5 3.5h3.2l1.4 4.4-2.3 1.8a13 13 0 0 0 6.5 6.5l1.8-2.3 4.4 1.4v3.2c0 1-.9 1.8-1.9 1.7C10.3 19.6 4.4 13.7 3.8 5.4c-.1-1 .7-1.9 1.7-1.9z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="M7 11l5 5 5-5"/><path d="M4.5 19.5h15"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v5"/><path d="M12 16v5"/><path d="M3 12h5"/><path d="M16 12h5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v9.5h12V10"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.6"/><path d="M5 20c1-3.6 4-5.4 7-5.4s6 1.8 7 5.4"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M3.5 5h17v11h-9l-4 3.5V16h-4z"/></symbol>
+  <symbol id="i-behance" viewBox="0 0 24 24"><rect x="3" y="7" width="8" height="10" rx="2"/><path d="M3 11.5h6"/><path d="M14 12c0-2.8 2-4.5 4.5-4.5S22 9 22 11.5h-7c0 2.5 1.8 4 4.2 4 1.4 0 2.4-.5 3-1.3" /></symbol>
+  <symbol id="i-dribbble" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.3"/><path d="M4 9.3c4.5 1.6 9.8 1.4 15.6-.8"/><path d="M9.6 3a18 18 0 0 1 4 13.7"/><path d="M3.4 16.4c3-3 8-4 16-2.6"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7.6 10v7"/><circle cx="7.6" cy="7" r=".9" fill="currentColor" stroke="none"/><path d="M11.6 17v-4.2c0-1.6 1-2.6 2.4-2.6 1.4 0 2.4 1 2.4 2.6V17"/><path d="M11.6 10v7"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0-2.8 17.5c.5.1.6-.2.6-.5v-1.8c-2.5.5-3-1.1-3-1.1-.4-1-1-1.3-1-1.3-.8-.5.1-.5.1-.5.9.1 1.4.9 1.4.9.8 1.4 2.1 1 2.6.8.1-.6.3-1 .6-1.3-2-.2-4.1-1-4.1-4.4 0-1 .3-1.8.9-2.4-.1-.2-.4-1.1.1-2.4 0 0 .8-.3 2.6.9a9 9 0 0 1 4.7 0c1.8-1.2 2.6-.9 2.6-.9.5 1.3.2 2.2.1 2.4.6.6.9 1.4.9 2.4 0 3.4-2.1 4.2-4.1 4.4.3.3.6.9.6 1.8v2.2c0 .3.1.6.6.5A9 9 0 0 0 12 3z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-type" viewBox="0 0 24 24"><path d="M5 18.5 9.5 6h1L15 18.5"/><path d="M6.6 14.5h6.8"/><path d="M16 18.5v-6.2c0-1.3 1-2 2.2-2 .8 0 1.4.2 1.8.5"/><path d="M16.3 15.3c.4-.4 1.1-.6 1.8-.6 1.2 0 2.1.7 2.1 1.9s-.9 1.9-2.1 1.9c-.7 0-1.4-.2-1.8-.6"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><rect x="3" y="13" width="4.2" height="8"/><rect x="9.9" y="8.5" width="4.2" height="12.5"/><rect x="16.8" y="3.5" width="4.2" height="17.5"/></symbol>
+  <symbol id="i-droplet" viewBox="0 0 24 24"><path d="M12 3.3c3.6 4.5 6.4 7.9 6.4 11.2A6.4 6.4 0 1 1 5.6 14.5c0-3.3 2.8-6.7 6.4-11.2z"/></symbol>
+  <symbol id="i-flow" viewBox="0 0 24 24"><circle cx="4.5" cy="6" r="2"/><circle cx="19.5" cy="6" r="2"/><circle cx="12" cy="18" r="2"/><path d="M6.3 7.2 10.3 16"/><path d="M17.7 7.2 13.7 16"/></symbol>
+  <symbol id="i-journey" viewBox="0 0 24 24"><circle cx="3.5" cy="17.5" r="1.6" fill="currentColor" stroke="none"/><path d="M3.5 17.5c2-1 3.5-7.5 7.5-7.5s4.5 6 8 6" stroke-dasharray="2.6 2.8"/><path d="M19 13v5.5"/><path d="M19 13l2.6 1.3-2.6 1.3z" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h3.8l1.7 2H19a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/><path d="M9 13.3l1.8 1.8 3.2-3.6"/></symbol>
+  <symbol id="i-connect" viewBox="0 0 24 24"><rect x="2" y="5" width="7.5" height="13" rx="1.4"/><rect x="14.5" y="5" width="7.5" height="13" rx="1.4"/><path d="M9.5 11.5h5"/><circle cx="12" cy="11.5" r="1.1" fill="currentColor" stroke="none"/></symbol>
+</defs>
+</svg>
+
+<!-- ============================================================
+     LOADER
+============================================================ -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark"><span>PC</span></div>
+  <div class="loader-bar"><i></i></div>
+  <div class="loader-label">Loading portfolio</div>
+</div>
+
+<div id="progress" aria-hidden="true"></div>
+
+<div class="app">
+
+  <!-- background layers -->
+  <div class="aurora" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+  <div class="canvas-grid" aria-hidden="true"></div>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="shapes-bg" aria-hidden="true">
+    <span class="shape circle" style="width:130px;height:130px;top:6%;left:-40px;animation:shapeDrift1 21s ease-in-out infinite;"></span>
+    <span class="shape square" style="width:64px;height:64px;top:58%;right:-18px;animation:shapeDrift2 25s ease-in-out infinite;"></span>
+    <span class="shape" style="top:16%;right:8%;animation:shapeDrift3 27s ease-in-out infinite;">
+      <svg width="36" height="36" viewBox="0 0 24 24"><path d="M12 3l9 18H3z" fill="none" stroke="var(--blue)" stroke-width="1.4" opacity=".5"/></svg>
+    </span>
+    <span class="shape" style="top:80%;left:12%;animation:shapeDrift4 23s ease-in-out infinite;">
+      <svg width="24" height="24" viewBox="0 0 24 24" style="color:var(--text-faint);opacity:.5;"><use href="#i-cursor"/></svg>
+    </span>
+    <span class="shape" style="top:36%;left:4%;animation:shapeDrift5 26s ease-in-out infinite;">
+      <svg width="28" height="28" viewBox="0 0 24 24" style="color:var(--cyan);opacity:.45;"><use href="#i-shapes"/></svg>
+    </span>
+    <span class="shape" style="top:90%;right:16%;animation:shapeDrift2 29s ease-in-out infinite;">
+      <svg width="22" height="22" viewBox="0 0 24 24" style="color:var(--purple);opacity:.4;"><use href="#i-atom"/></svg>
+    </span>
+    <svg class="flow-line" viewBox="0 0 400 900" preserveAspectRatio="none">
+      <defs>
+        <linearGradient id="lineGrad1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" style="stop-color:var(--blue)"/>
+          <stop offset="50%" style="stop-color:var(--purple)"/>
+          <stop offset="100%" style="stop-color:var(--cyan)"/>
+        </linearGradient>
+      </defs>
+      <path d="M-20 140 C 80 70, 160 240, 260 150 S 430 270, 540 170" stroke="url(#lineGrad1)" stroke-width="1.4" fill="none" opacity=".22" stroke-dasharray="6 10"/>
+      <path d="M-40 620 C 60 560, 150 720, 270 630 S 440 760, 560 650" stroke="url(#lineGrad1)" stroke-width="1.4" fill="none" opacity=".18" stroke-dasharray="6 10"/>
+    </svg>
+  </div>
+
+  <canvas id="about-bg"   class="page-bg-canvas" aria-hidden="true"></canvas>
+  <canvas id="contact-bg" class="page-bg-canvas" aria-hidden="true"></canvas>
+
+  <main>
+
+    <!-- ============================================================
+         PAGE 1 — HOME
+    ============================================================ -->
+    <section id="home" class="page active" aria-label="Home">
+
+      <div class="hero-wrap">
+        <div class="frame-deco" style="width:64px;height:64px;top:-6px;right:6px;" aria-hidden="true">
+          <span class="handle tl"></span><span class="handle tr"></span><span class="handle bl"></span><span class="handle br"></span>
+          <span class="tag">390×844</span>
+        </div>
+
+        <div class="hero reveal in stagger-wrap" id="heroStagger">
+          <div class="avatar-ring stagger-item"><div class="inner" id="heroAvatarInner">PC</div></div>
+
+          <p class="eyebrow stagger-item">Available for freelance &amp; full-time roles</p>
+
+          <h1 class="h1 stagger-item">
+            <span style="display:block;color:var(--text-dim);font-size:.55em;font-weight:500;">Hi, I'm</span>
+            <span class="name-row">
+              <span class="name-reveal-wrap">
+                <span class="name-line gradient-text" id="nameLine" aria-label="THE PC"></span>
+              </span>
+              <span class="name-badge glass">UI/UX Designer</span>
+            </span>
+          </h1>
+
+          <div class="role-rotator stagger-item" aria-live="polite"><span id="roleText">UI/UX Designer</span></div>
+
+          <p class="hero-intro lead stagger-item">
+            Crafting modern digital experiences that combine aesthetics with usability —
+            websites, mobile apps, SaaS dashboards and design systems that help businesses grow.
+          </p>
+
+          <div class="btn-row stagger-item">
+            <button class="btn btn-primary" data-action="view-portfolio">View portfolio <svg class="icon" style="color:#08090d"><use href="#i-arrow"/></svg></button>
+            <button class="btn btn-secondary" data-action="go-contact">Contact me</button>
+            <a class="btn btn-secondary" id="resumeBtn" href="#" target="_blank" rel="noopener">Download resume <svg class="icon"><use href="#i-download"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="services">
+        <div class="section-head reveal">
+          <p class="eyebrow">What I do</p>
+          <h2 class="h2">Featured services</h2>
+        </div>
+        <div class="svc-grid reveal">
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-cursor"/></svg></div><div class="svc-title">UI design</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-search"/></svg></div><div class="svc-title">UX research</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-layers"/></svg></div><div class="svc-title">Product design</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-window"/></svg></div><div class="svc-title">Website design</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-phone"/></svg></div><div class="svc-title">Mobile app design</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-grid"/></svg></div><div class="svc-title">Dashboard design</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-play"/></svg></div><div class="svc-title">Interactive prototypes</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-frame"/></svg></div><div class="svc-title">Wireframing</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-atom"/></svg></div><div class="svc-title">Design systems</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-devices"/></svg></div><div class="svc-title">Responsive design</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-code"/></svg></div><div class="svc-title">Developer handoff</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-shapes"/></svg></div><div class="svc-title">Figma design</div></div>
+        </div>
+      </div>
+
+      <div class="section" id="capabilities">
+        <div class="section-head reveal">
+          <p class="eyebrow">Design capabilities</p>
+          <h2 class="h2">What I bring to the table</h2>
+        </div>
+        <div class="svc-grid reveal">
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-type"/></svg></div><div class="svc-title">Typography</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-bars"/></svg></div><div class="svc-title">Visual hierarchy</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-droplet"/></svg></div><div class="svc-title">Color theory — gradients &amp; glassmorphism, dark/light</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-flow"/></svg></div><div class="svc-title">User flow</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-user"/></svg></div><div class="svc-title">Persona</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-journey"/></svg></div><div class="svc-title">User journey</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-folder"/></svg></div><div class="svc-title">Clean Figma files</div></div>
+          <div class="glass tilt-card svc-card"><div class="svc-icon"><svg class="icon" style="width:18px;height:18px"><use href="#i-connect"/></svg></div><div class="svc-title">Connect screens — clickable flows</div></div>
+        </div>
+      </div>
+
+      <div class="section" id="process-preview">
+        <div class="section-head reveal">
+          <p class="eyebrow">How it works</p>
+          <h2 class="h2">My process</h2>
+        </div>
+        <div class="timeline-scroll reveal">
+          <div class="glass tilt-card tl-card"><div class="tl-num">01</div><div class="tl-title">Discovery</div><div class="tl-bar"><i></i></div></div>
+          <div class="glass tilt-card tl-card"><div class="tl-num">02</div><div class="tl-title">Wireframing</div><div class="tl-bar"><i></i></div></div>
+          <div class="glass tilt-card tl-card"><div class="tl-num">03</div><div class="tl-title">Design</div><div class="tl-bar"><i></i></div></div>
+          <div class="glass tilt-card tl-card"><div class="tl-num">04</div><div class="tl-title">Prototype</div><div class="tl-bar"><i></i></div></div>
+          <div class="glass tilt-card tl-card"><div class="tl-num">05</div><div class="tl-title">Testing</div><div class="tl-bar"><i></i></div></div>
+          <div class="glass tilt-card tl-card"><div class="tl-num">06</div><div class="tl-title">Delivery</div><div class="tl-bar"><i></i></div></div>
+        </div>
+      </div>
+
+      <div class="glass tilt-card final-cta reveal" style="margin-top:64px;">
+        <p class="eyebrow" style="margin-bottom:8px;">Let's talk</p>
+        <h3 class="h3">Don't settle for a design that just looks "okay".</h3>
+        <p class="lead" style="margin-top:8px;">Let's create an experience your users will love — and remember.</p>
+        <div class="btn-row" style="margin-top:18px;">
+          <button class="btn btn-primary" data-action="go-contact">Let's design something amazing <svg class="icon" style="color:#08090d"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         PAGE 2 — ABOUT
+    ============================================================ -->
+    <section id="about" class="page" aria-label="About">
+
+      <div class="stagger-wrap" id="aboutStagger">
+        <div class="profile-hero reveal in stagger-item">
+          <div class="profile-photo" id="profilePhotoWrap">
+            <div class="inner" id="profilePhotoInner">PC</div>
+          </div>
+          <div>
+            <p class="eyebrow">About me</p>
+            <h2 class="h2">My name is <span class="gradient-text">Piyush Chaudhary.</span></h2>
+          </div>
+        </div>
+
+        <p class="lead reveal stagger-item" style="margin-top:18px;">
+          I'm passionate about creating digital experiences that blend aesthetics with usability —
+          products that are beautiful, intuitive and impactful. Every interface I build focuses on
+          improving user satisfaction while helping businesses achieve their objectives. I'm 19 years
+          old and currently pursuing BCA (3rd year) at Swarrnim Startup &amp; Innovation University (SSIU).
+        </p>
+      </div>
+
+      <div class="section">
+        <div class="section-head reveal"><p class="eyebrow">Capabilities</p><h2 class="h2">Skills</h2></div>
+        <div class="glass tilt-card reveal" style="padding:20px 18px;">
+          <div class="skill-row"><div class="skill-top"><b>Figma</b><span>98%</span></div><div class="skill-track"><div class="skill-fill" data-fill="98"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><b>UI design</b><span>95%</span></div><div class="skill-track"><div class="skill-fill" data-fill="95"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><b>UX research</b><span>88%</span></div><div class="skill-track"><div class="skill-fill" data-fill="88"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><b>Prototyping</b><span>92%</span></div><div class="skill-track"><div class="skill-fill" data-fill="92"></div></div></div>
+          <div class="skill-row"><div class="skill-top"><b>Design systems</b><span>90%</span></div><div class="skill-track"><div class="skill-fill" data-fill="90"></div></div></div>
+          <div class="skill-row" style="margin-bottom:0;"><div class="skill-top"><b>Typography</b><span>85%</span></div><div class="skill-track"><div class="skill-fill" data-fill="85"></div></div></div>
+          <div class="chip-row">
+            <span class="chip glass">Wireframing</span>
+            <span class="chip glass">Adobe Photoshop</span>
+            <span class="chip glass">Web design</span>
+            <span class="chip glass">Mobile app design</span>
+            <span class="chip glass">Responsive design</span>
+            <span class="chip glass">Auto layout</span>
+            <span class="chip glass">Components</span>
+            <span class="chip glass">Interactive prototypes</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-head reveal"><p class="eyebrow">Toolkit</p><h2 class="h2">Tools</h2></div>
+        <div class="tool-row reveal">
+          <div class="glass tilt-card tool-badge"><svg class="icon"><use href="#i-shapes"/></svg><span>Figma</span></div>
+          <div class="glass tilt-card tool-badge"><svg class="icon"><use href="#i-layers"/></svg><span>Photoshop</span></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="glass tilt-card reveal" style="padding:20px 18px;">
+          <p class="eyebrow">My work type</p>
+          <p class="lead">
+            I'll craft a custom UI/UX design in Figma that's not just visually appealing but also
+            strategically built to enhance usability, boost engagement and help your product succeed.
+            Whether it's a SaaS platform, mobile app or dashboard, I'll make sure your design is
+            intuitive, scalable and perfectly aligned with your brand.
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-head reveal"><p class="eyebrow">Deliverables</p><h2 class="h2">What you'll get</h2></div>
+        <div class="get-grid reveal">
+          <div class="glass tilt-card get-card"><svg class="icon"><use href="#i-shapes"/></svg><b>Custom design</b><p>Tailored layouts built completely from scratch.</p></div>
+          <div class="glass tilt-card get-card"><svg class="icon"><use href="#i-cursor"/></svg><b>Pixel-perfect UI</b><p>Beautiful interfaces ready for development.</p></div>
+          <div class="glass tilt-card get-card"><svg class="icon"><use href="#i-user"/></svg><b>User-centered UX</b><p>Easy navigation and better engagement.</p></div>
+          <div class="glass tilt-card get-card"><svg class="icon"><use href="#i-devices"/></svg><b>Responsive layouts</b><p>Desktop, tablet and mobile, covered.</p></div>
+          <div class="glass tilt-card get-card"><svg class="icon"><use href="#i-play"/></svg><b>Figma prototype</b><p>An interactive, click-through prototype.</p></div>
+          <div class="glass tilt-card get-card"><svg class="icon"><use href="#i-code"/></svg><b>Dev-ready files</b><p>Organized components and a design system.</p></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-head reveal"><p class="eyebrow">Roadmap</p><h2 class="h2">My 4-step process</h2></div>
+        <div class="steps reveal">
+          <div class="step"><div class="step-num">Step 01</div><div class="step-title">Discovery</div><p class="lead" style="font-size:13px;margin-top:4px;">Understanding the product, audience and goals.</p></div>
+          <div class="step"><div class="step-num">Step 02</div><div class="step-title">Wireframes &amp; concepts</div><ul><li>Low fidelity</li><li>High fidelity</li><li>User flow</li><li>Information architecture</li></ul></div>
+          <div class="step"><div class="step-num">Step 03</div><div class="step-title">Refinement</div><ul><li>Two revision rounds</li><li>Testing</li><li>Improvements</li></ul></div>
+          <div class="step"><div class="step-num">Step 04</div><div class="step-title">Delivery</div><ul><li>Figma file</li><li>Prototype</li><li>Assets</li><li>Developer handoff</li></ul></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="glass tilt-card reveal" style="padding:20px 18px;">
+          <p class="eyebrow">Why work with me</p>
+          <p class="lead">
+            Exceptional design isn't just about aesthetics — it's about solving real user problems
+            through thoughtful experiences. I combine creativity with usability to craft intuitive
+            interfaces that help products stand out, with transparent communication and regular
+            updates from concept to final delivery.
+          </p>
+          <div style="margin-top:16px;display:flex;align-items:center;gap:10px;">
+            <svg class="icon" style="color:var(--cyan)"><use href="#i-spark"/></svg>
+            <span style="font-size:13px;color:var(--text-dim)">Typical project completion: <b style="color:var(--text)">2–3 weeks</b>, depending on complexity.</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         PAGE 3 — CONTACT
+    ============================================================ -->
+    <section id="contact" class="page" aria-label="Contact">
+
+      <div class="reveal in stagger-wrap" id="contactStagger">
+        <p class="eyebrow stagger-item">Get in touch</p>
+        <h2 class="h1 stagger-item" style="font-size:clamp(30px,8vw,38px)">Let's work <span class="gradient-text">together.</span></h2>
+        <p class="lead stagger-item" style="margin-top:14px;">Ready to build something amazing? Let's transform your ideas into beautiful digital experiences.</p>
+      </div>
+
+      <div class="contact-info section reveal">
+        <a class="glass tilt-card contact-row" id="emailRow" href="#">
+          <svg class="icon"><use href="#i-mail"/></svg>
+          <div><div class="label">Email</div><div class="value" id="emailValue">—</div></div>
+          <svg class="icon go"><use href="#i-arrow"/></svg>
+        </a>
+        <a class="glass tilt-card contact-row" id="phoneRow" href="#">
+          <svg class="icon"><use href="#i-phone-call"/></svg>
+          <div><div class="label">Phone</div><div class="value" id="phoneValue">—</div></div>
+          <svg class="icon go"><use href="#i-arrow"/></svg>
+        </a>
+      </div>
+
+      <div class="section reveal">
+        <div class="glass tilt-card" style="padding:22px 18px;">
+          <h3 class="h3" style="margin-bottom:18px;">Project enquiry</h3>
+          <form id="contactForm" novalidate>
+            <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" type="text" placeholder="Your full name" required></div>
+            <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" placeholder="you@email.com" required></div>
+            <div class="field"><label for="f-type">Project type</label>
+              <select id="f-type" name="type">
+                <option>Website design</option>
+                <option>Mobile app design</option>
+                <option>SaaS dashboard</option>
+                <option>Design system</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field"><label for="f-message">Message</label><textarea id="f-message" name="message" placeholder="Tell me a bit about your project…" required></textarea></div>
+            <button type="submit" class="btn btn-primary send-btn" data-state="idle">
+              <span class="spinner"></span>
+              <span class="label"><span class="label-text"></span></span>
+              <svg class="icon" style="color:#08090d"><use href="#i-arrow"/></svg>
+            </button>
+            <p style="font-size:11.5px;color:var(--text-faint);margin-top:10px;line-height:1.5;">
+              This form is wired up on the front end only — connect it to a service like Formspree
+              or a backend endpoint to actually receive submissions.
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="section reveal">
+        <p class="eyebrow">Find me elsewhere</p>
+        <div class="social-grid">
+          <a class="glass tilt-card social-btn" id="s-behance" href="#" target="_blank" rel="noopener" aria-label="Behance"><svg class="icon"><use href="#i-behance"/></svg></a>
+          <a class="glass tilt-card social-btn" id="s-linkedin" href="#" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+          <a class="glass tilt-card social-btn" id="s-instagram" href="#" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"/></svg></a>
+        </div>
+      </div>
+
+      <div class="footer reveal">
+        <p><b>Piyush Chaudhary</b><br>UI/UX Designer · 2026</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       BOTTOM FLOATING NAV
+  ============================================================ -->
+  <nav class="bottom-nav" aria-label="Primary">
+    <span class="nav-indicator" id="navIndicator"></span>
+    <button class="nav-item active" data-target="home"><svg class="icon"><use href="#i-home"/></svg>Home</button>
+    <button class="nav-item" data-target="about"><svg class="icon"><use href="#i-user"/></svg>About</button>
+    <button class="nav-item" data-target="contact"><svg class="icon"><use href="#i-chat"/></svg>Contact</button>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
