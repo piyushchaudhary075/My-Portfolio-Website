@@ -536,16 +536,43 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   /* ---------- contact form (front-end only, see note in UI) ---------- */
-  document.getElementById("contactForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-    const btn = e.target.querySelector(".send-btn");
-    if (btn.dataset.state !== "idle") return;
-    btn.dataset.state = "sending";
+ document.getElementById("contactForm").addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const btn = form.querySelector(".send-btn");
+
+  if (btn.dataset.state !== "idle") return;
+  btn.dataset.state = "sending";
+
+  const name = document.getElementById("f-name").value;
+  const email = document.getElementById("f-email").value;
+  const project = document.getElementById("f-type").value;
+  const message = document.getElementById("f-message").value;
+
+  const phone = "917990127718";
+
+  const text = `*New Portfolio Enquiry*%0A%0A
+👤 Name: ${name}%0A
+📧 Email: ${email}%0A
+💼 Project Type: ${project}%0A%0A
+📝 Message:%0A${message}`;
+
+  setTimeout(() => {
+    btn.dataset.state = "sent";
+
+    window.open(
+      `https://wa.me/${phone}?text=${text}`,
+      "_blank"
+    );
+
     setTimeout(() => {
-      btn.dataset.state = "sent";
-      setTimeout(() => { btn.dataset.state = "idle"; e.target.reset(); }, 2200);
-    }, 1100);
-  });
+      btn.dataset.state = "idle";
+      form.reset();
+    }, 2200);
+
+  }, 800);
+});
 
   /* ---------- particle canvas background ---------- */
   const canvas = document.getElementById("particles");
